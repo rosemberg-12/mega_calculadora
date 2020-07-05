@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MegaCalculadora binaria",
+		"_postman_id": "6a4660b8-9bfd-67e4-1de4-85adb0e930f2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Historial",
+			"request": {
+				"url": "http://localhost:8085/api/historial",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sumar Decimal",
+			"request": {
+				"url": "http://localhost:8085/api/sumar/decimal",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numero1\":\"3\",\n\t\"numero2\":\"2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Restar Decimal",
+			"request": {
+				"url": "http://localhost:8085/api/restar/decimal",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numero1\":\"5\",\n\t\"numero2\":\"3\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sumar Binario",
+			"request": {
+				"url": "http://localhost:8085/api/sumar/binario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numero1\":\"001\",\n\t\"numero2\":\"110\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Restar Binario",
+			"request": {
+				"url": "http://localhost:8085/api/restar/binario",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"numero1\":\"001\",\n\t\"numero2\":\"110\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
